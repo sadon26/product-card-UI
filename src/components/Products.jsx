@@ -110,21 +110,13 @@ const Products = () => {
               key={product.id}
               className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4"
             >
-              <ProductCard
-                product={product}
-                className="h-100"
-                inStock={product.id !== 3}
-              />
+              <ProductCard product={product} className="h-100" />
             </div>
           );
         })}
       </>
     );
   };
-
-  useEffect(() => {
-    console.log(filter);
-  }, [filter]);
 
   return (
     <>
